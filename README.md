@@ -1,2 +1,2 @@
-# Foundation-Translator-Availability-Comparator
-FTAC
+# Foundation-Article-for-Translation-Availablility-Comparator
+FATAC
