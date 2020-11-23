@@ -32,6 +32,12 @@ def INDEX():
                         writer = csv.writer(f)
                         writer.writerow([nomatch])
 
+def INDEX_FINAL():
+	for i in nomatch2:
+		with open('final_complex.csv', 'w') as f:
+			writer = csv.writer(f)
+			writer.writerow([nomatch2])
+
 # def returnMatches(NTF, RESV):
 #	standard = [[x for x in NTF if x in RESV], [x for x in RESV if x in NTF]]
 #	print(standard)
@@ -40,12 +46,22 @@ def INDEX():
 def NoMatchingDef(NTF, RESV):
 	nomatch = []
 	for i in NTF:
-		if i not in RESV:
+		if (i not in RESV and i in NTF) or (i in RESV and i not in NTF):
 			nomatch.append(i)
+		else:
+			pass
+
+
 	return nomatch
+
 
 nomatch = NoMatchingDef(NTF, RESV)
 print(nomatch)
+
+for item in nomatch:
+	nomatch2 = "".join(dict.fromkeys(nomatch))
+	print(nomatch2)
+	INDEX_FINAL()
 
 INDEX()
 

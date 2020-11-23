@@ -40,9 +40,10 @@ check3 = [item for item in check2 if item != '']
 # print(check3)
 check4 = [item.replace("|", "") for item in check3]
 print(check4)
-check5 = [list(filter(None, check4))]
+check5 = [list(filter(None, check4))] 
 print(check5)
 
 for item in check5:
-	print(check5)
+	check6 = "".join(dict.fromkeys(check5))
+	print(check6)
 	inputter()

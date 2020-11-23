@@ -19,8 +19,8 @@ def inputter():
 		filewriter.writerow([url_real])
 		filewriter.writerow('\n')
 
-for i in range(100):
-	u_s_num = 100
+for i in range(10):
+	u_s_num = 190
 	u_s_num += i
 	url_search = str(u_s_num)
 	url_real = url_start+url_search
