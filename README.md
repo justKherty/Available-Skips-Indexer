@@ -11,7 +11,7 @@ Les scripts FAI permettent de :
 
 -> Comparer les deux listes pour lister les articles non-réservés, et pas encore traduits
 
-Les scripts FAi ne permettent pas pour l'instant : 
+Les scripts FAi ne **permettent pas** pour l'instant : 
 
 -> D'avoir une interface graphique
 
@@ -23,3 +23,16 @@ Les scripts FAi ne permettent pas pour l'instant :
 
 
 FAI ne donne que les numéros des articles correspondant aux deux critères précedent (non traduits, non réservés). L'objectif principal de FAI est de vérifier plus rapidement si les articles pas encore traduits n'ont pas encore été réservés auparavent, et donne une liste d'articles 
+
+# Fonctionnement
+
+Il faut exécuter le script SCRAPPER.py pour construire la liste d'articles réservés.
+Ensuite, il faut exécuter le script TRANSLATING.py pour construire la liste d'articles par encore traduits. (est très long pour l'instant !) Puis finalement, exécuter le script COMPFIN.py pour comparer les deux listes, et intégrer cette liste dans le fichier de données FAINDEXED.csv.
+
+# Dépendances
+
+FAI nécessite:
+
+> BeautifulSoup (bs4)
+
+> urllib3
