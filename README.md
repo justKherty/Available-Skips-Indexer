@@ -36,3 +36,9 @@ FAI nécessite:
 > BeautifulSoup (bs4)
 
 > urllib3
+
+# Informations supplémentaires
+
+// Temporaire //
+Il y a 823 mots (24/11/2020) supplémetaire par page. 
+L'article le plus court, SCP-J, est composé de 52 mots. Or un compteur de mots indique qu'il est composé de 873 mots. 873 - 52 = 821.
