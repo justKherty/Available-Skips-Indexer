@@ -1,5 +1,5 @@
-# Foundation Non Reserved Non Translated Articles Indexer
-# Shortened as : Foundation Articles Indexer (FAI)
+# TO BE WRITTEN
+# OUTDATED INFO
 
 ----
 
